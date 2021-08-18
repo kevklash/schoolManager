@@ -22,16 +22,16 @@ if __name__ == '__main__':
             municipio = input("Digite el municipio del Centro Escolar: ")
             departamento = input("Digite el departamento del Centro Escolar: ")
             insert(codigo, nombre, municipio, departamento)
-            input()
+            input("Presione Enter para continuar...")
 
         elif option == "2":
             retrieve()
-            input()
+            input("Presione Enter para continuar...")
 
         elif option == "3":
             nombre = input("Digite el nombre del Centro Escolar: ")
             retrieve_filter(nombre)
-            input()
+            input("Presione Enter para continuar...")
 
         elif option == "4":
             codigo = input("Digite un código del Centro Escolar a actualizar: ")
@@ -39,19 +39,18 @@ if __name__ == '__main__':
             municipio = input("Digite el municipio del Centro Escolar: ")
             departamento = input("Digite el departamento del Centro Escolar: ")
             update(codigo, nombre, municipio, departamento)
-            input()
+            input("Presione Enter para continuar...")
 
         elif option == "5":
             codigo = input("Digite un código del Centro Escolar a eliminar: ")
             delete(codigo)
-            input()
+            input("Presione Enter para continuar...")
 
         elif option == "6":
             print("Terminando sesión. Adiós")
-            input()
             break
 
         else:
             print("Seleccione una opción válida")
-            input()
+            input("Presione Enter para continuar...")
             continue
